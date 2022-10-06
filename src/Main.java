@@ -75,7 +75,7 @@ public class Main {
            System.out.println();
        }
 
-       public static void indexSalary(){
+    public static void indexSalary(){
        double index = 0.2;
            for (int i =0; i<= employee.length - 1;i++){
                employee[i].setSalary(employee[i].getSalary() + employee[i].getSalary()* index);
@@ -85,7 +85,7 @@ public class Main {
 
        }
 
-       public static void departments(){
+    public static void departments(){
            System.out.println("Сотрудники по отделам");
            double min = 90000;
            double max = 0;
