@@ -10,6 +10,7 @@ public class Employee {
         this.salary = salary;
         this.id=id;
     }
+
     public String getFio(){
         return fio;
     }
@@ -33,6 +34,9 @@ public class Employee {
     }
     public void setDepartment(int department){
         this.department = department;
+    }
+    public void setId(int id){
+        this.id = id;
     }
 
 
