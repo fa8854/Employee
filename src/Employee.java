@@ -4,19 +4,22 @@ public class Employee {
     private double salary;
     private final int id;
     private static int number;
-    public Employee(String fio,int department, double salary){
+    public Employee(String fio,int department, double salary) {
         this.fio = fio;
-        this.department =department;
+        this.department = department;
         this.salary = salary;
-        this.id=getNumber();
+        this.id = getNumber();
         number++;
     }
+
     public String getFio(){
         return fio;
     }
+
     public int getDepartment(){
         return department;
     }
+
     public double getSalary(){
         return salary;
     }
