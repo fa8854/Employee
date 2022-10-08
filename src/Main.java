@@ -144,6 +144,7 @@ public class Main {
         System.out.println("Средняя зарплата по отделу : " + middle);
         System.out.println();
     }
+
     private static void departmentsIndexSelary(double index, int dep){
         System.out.println("Зарплата сотрудникам проиндексирована");
         for (int i =0; i<= EMPLOYEES.length- 1;i++){
