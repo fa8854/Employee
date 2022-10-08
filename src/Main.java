@@ -1,9 +1,6 @@
-
 public class Main {
     private static final Employee[] employees = new Employee[10];
-
     public static void main(String[] args) {
-
         addEmployee();
         sumMouthSalary();
         minSalary();
@@ -37,7 +34,7 @@ public class Main {
 
        System.out.println();
    }
-   private static void printEmployee(){
+    private static void printEmployee(){
        for (int i = 0; i < employees.length; i++) {
             System.out.println(employees[i]);
             }
@@ -87,7 +84,6 @@ public class Main {
         }
            System.out.println();
        }
-
     private static void indexSalary(){
         System.out.println("Индексация зарплат сотрудников");
         double index = 0.3;
@@ -98,7 +94,6 @@ public class Main {
            System.out.println();
 
        }
-
     private static void departments(){
            System.out.println("Сотрудники по отделам");
         int dep = 1;
@@ -112,14 +107,11 @@ public class Main {
 
            System.out.println();
        }
-       private static void departmetsMin(){
+    private static void departmetsMin(){
            int dep = 1;
-
            double min = Integer.MAX_VALUE;
            for (int i =0; i<= employees.length- 1;i++){
                 if (employees[i].getDepartment() == dep){
-
-
                     if (employees[i].getSalary() < min){
                        min = employees[i].getSalary();
                    }
@@ -130,12 +122,9 @@ public class Main {
     }
     private static void departmetsMax(){
         int dep = 1;
-
         double max = 0;
         for (int i =0; i<= employees.length- 1;i++){
             if (employees[i].getDepartment() == dep){
-
-
                 if (employees[i].getSalary() > max){
                     max = employees[i].getSalary();
                 }
@@ -146,7 +135,6 @@ public class Main {
     }
     private static void departmetsSum(){
         int dep = 1;
-
         double sum = 0;
         for (int i =0; i<= employees.length- 1;i++){
             if (employees[i].getDepartment() == dep){
@@ -158,7 +146,6 @@ public class Main {
     }
     private static void departmetsMiddleSalary (){
         int dep = 1;
-
         double middle =0;
         int department = 0;
         double sum = 0;
@@ -175,10 +162,8 @@ public class Main {
     }
     private static void departmentsIndexSelary(double index){
         System.out.println("Зарплата сотрудникам проиндексирована");
-
         int dep = 1;
         int department = 0;
-
         for (int i =0; i<= employees.length- 1;i++){
             if (employees[i].getDepartment() == dep){
                 department = department + 1;
@@ -209,8 +194,6 @@ public class Main {
         }
         System.out.println();
     }
-
-
-       }
+}
 
 
